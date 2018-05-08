@@ -12,26 +12,26 @@ print("******************Results******************")
 print("*******************************************")
 print("-------------------------------------------")
 
+def callLabour():
+    print("\n-----Labour-----")
+
+def callConservatives():
+    print("\n-----Conservatives-----")
+
+def callLibDems():
+    print("\n-----LibDems-----")
+
 def vote(party):
     print(party)
-    labourTally = 0
-    consTally = 0
-    libdemTally = 0
-    if party == "Labour": labourTally = labourTally + 1
-    elif party == "Conservatives": consTally = consTally + 1
-    elif party == "LibDems": libdemTally = libdemTally + 1
-    #file.write(labourTally,consTally,libdemTally)
+    
+ 
+Labour = Button(window, text="Labour", bg="red", command=callLabour)
+Labour.pack()
 
-lbl = Label(window, text="Press to vote. You may only vote once.")
-lbl.grid(column=0, row=0)
+Conservatives = Button(window, text="Conservatives", bg="blue", fg="white", command=callConservatives)
+Conservatives.pack()
 
-Labour = Button(window, text="Labour", bg="red", command=vote("Labour"))
-Labour.grid(column=0, row=2)
+LibDems = Button(window, text="LibDems", bg="yellow", command=callLibDems)
+LibDems.pack()
 
-Conservatives = Button(window, text="Conservatives", bg="blue", fg="white", command=vote("Conservative"))
-Conservatives.grid(column=0, row=3)
-
-LibDems = Button(window, text="LibDems", bg="yellow", command=vote("LibDem"))
-LibDems.grid(column=0, row=4)
-
-window.mainloop()
+mainloop()
