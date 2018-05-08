@@ -2,13 +2,14 @@ An introduction to GUIs with Tkinter
 
 Improvements:
 
-Save results to a CSV file
-Calculate winner based on results
+*1* Save results to a (CSV) file
 
-Use one voting function and pass parameters to it, instead of multiple functions based on each party
+*2* Calculate winner based on results
 
-Make sure each user can only vote once
+*3* Use one voting function and pass parameters to it, instead of multiple functions based on each party
 
-Instead of packing in the buttons, use a grid (look up Tkinter grids)
+*4* Make sure each user can only vote once
 
-Display a some kind of verification / thank you for submitting.
+*5* Instead of packing in the buttons, use a grid (look up Tkinter grids)
+
+*6* Display some kind of verification / thank you for submitting.
