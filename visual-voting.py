@@ -1,5 +1,3 @@
-from subprocess import call
-import sys
 from tkinter import *
 
 master = Tk()
